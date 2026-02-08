@@ -413,3 +413,12 @@ flutter run
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## Author
+
+**Muhammad Umer**
+
+- GitHub: [@Umer9538](https://github.com/Umer9538)
+- Email: [muhammadumer9538@gmail.com](mailto:muhammadumer9538@gmail.com)

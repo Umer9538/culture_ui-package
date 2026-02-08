@@ -4,9 +4,9 @@ description: >-
   cultural context. Goes beyond translation to handle cultural UX patterns
   like button placement, layout density, color semantics, and more.
 version: 0.1.0
-homepage: https://github.com/culture-ui/culture_ui
-repository: https://github.com/culture-ui/culture_ui
-issue_tracker: https://github.com/culture-ui/culture_ui/issues
+homepage: https://github.com/Umer9538/culture_ui
+repository: https://github.com/Umer9538/culture_ui
+issue_tracker: https://github.com/Umer9538/culture_ui/issues
 
 topics:
   - i18n
