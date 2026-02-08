@@ -23,10 +23,7 @@ class _CultureUiExampleState extends State<CultureUiExample> {
       profile: _selectedProfile,
       child: MaterialApp(
         title: 'culture_ui Example',
-        theme: ThemeData(
-          colorSchemeSeed: Colors.blue,
-          useMaterial3: true,
-        ),
+        theme: ThemeData(colorSchemeSeed: Colors.blue, useMaterial3: true),
         home: HomePage(
           selectedProfile: _selectedProfile,
           onProfileChanged: (profile) {

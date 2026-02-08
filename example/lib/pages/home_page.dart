@@ -17,9 +17,7 @@ class HomePage extends StatelessWidget {
     final now = DateTime.now();
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('culture_ui Demo'),
-      ),
+      appBar: AppBar(title: const Text('culture_ui Demo')),
       body: SingleChildScrollView(
         child: GeoLayoutDensity(
           child: Column(
@@ -41,11 +39,14 @@ class HomePage extends StatelessWidget {
                         value: selectedProfile,
                         isExpanded: true,
                         items: CultureProfiles.all
-                            .map((p) => DropdownMenuItem(
-                                  value: p,
-                                  child: Text(
-                                      '${p.displayName} (${p.locales.first})'),
-                                ))
+                            .map(
+                              (p) => DropdownMenuItem(
+                                value: p,
+                                child: Text(
+                                  '${p.displayName} (${p.locales.first})',
+                                ),
+                              ),
+                            )
                             .toList(),
                         onChanged: (p) {
                           if (p != null) onProfileChanged(p);
@@ -177,10 +178,14 @@ class HomePage extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       GeoButtonPair(
-                        primary:
-                            GeoButtonConfig(label: 'Save', onPressed: () {}),
-                        secondary:
-                            GeoButtonConfig(label: 'Cancel', onPressed: () {}),
+                        primary: GeoButtonConfig(
+                          label: 'Save',
+                          onPressed: () {},
+                        ),
+                        secondary: GeoButtonConfig(
+                          label: 'Cancel',
+                          onPressed: () {},
+                        ),
                       ),
                     ],
                   ),
@@ -241,9 +246,7 @@ class HomePage extends StatelessWidget {
                         runSpacing: 8,
                         children: culture.colorSemantics.entries.map((entry) {
                           return Chip(
-                            avatar: CircleAvatar(
-                              backgroundColor: entry.value,
-                            ),
+                            avatar: CircleAvatar(backgroundColor: entry.value),
                             label: Text(entry.key.name),
                           );
                         }).toList(),
@@ -269,10 +272,13 @@ class HomePage extends StatelessWidget {
                       Text('ID: ${culture.id}'),
                       Text('Density: ${culture.layoutDensity.name}'),
                       Text('Reading: ${culture.readingPattern.name}'),
-                      Text('Name order: ${culture.nameInputExpectsFamily.name}'),
+                      Text(
+                        'Name order: ${culture.nameInputExpectsFamily.name}',
+                      ),
                       Text('24h time: ${culture.uses24HourTime}'),
                       Text(
-                          'Currency: ${culture.currencySymbol} (${culture.currencyCode})'),
+                        'Currency: ${culture.currencySymbol} (${culture.currencyCode})',
+                      ),
                     ],
                   ),
                 ),
