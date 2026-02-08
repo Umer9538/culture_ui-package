@@ -1,0 +1,32 @@
+name: culture_ui
+description: >-
+  Semantic geo-context widgets that automatically adapt UI behavior based on
+  cultural context. Goes beyond translation to handle cultural UX patterns
+  like button placement, layout density, color semantics, and more.
+version: 0.1.0
+homepage: https://github.com/culture-ui/culture_ui
+repository: https://github.com/culture-ui/culture_ui
+issue_tracker: https://github.com/culture-ui/culture_ui/issues
+
+topics:
+  - i18n
+  - localization
+  - culture
+  - widgets
+  - ux
+
+environment:
+  sdk: ^3.9.0
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
